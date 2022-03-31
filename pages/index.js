@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <div>
-      <h1>NEXTFLIX CLONE</h1>
+      <h1>NETFLIX CLONE</h1>
     </div>
   )
 }
