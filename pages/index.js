@@ -6,11 +6,19 @@ import requests from "./requests";
 
 export default function Home() {
   return (
-    <div>
-      <h1>NETFLIX CLONE</h1>
+    <div className="home_page">
+      <h1 className="nice__">NETFLIX CLONE</h1>
 
-      <Row title="Netflix Originals" fetchUrl={requests} />
-      <Row title="Trending Now" fetchUrl={requests} />
+      <Row
+        title="Netflix Originals"
+        fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow
+      />
+      <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+
+      <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />
+
+      <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
     </div>
   );
 }
