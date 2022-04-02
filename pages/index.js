@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
 // import styles from '../styles/Home.module.css'
 import Row from "../components/Row";
 import requests from "./requests";
@@ -7,6 +10,8 @@ import requests from "./requests";
 export default function Home() {
   return (
     <div className="home_page">
+      <Header />
+      <Hero fetchUrl={requests.fetchTrending} />
       <h1 className="nice__">NETFLIX CLONE</h1>
 
       <Row
@@ -19,6 +24,8 @@ export default function Home() {
       <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />
 
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
+
+      <Footer />
     </div>
   );
 }
