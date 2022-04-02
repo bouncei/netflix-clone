@@ -22,6 +22,11 @@ const Hero = ({ fetchUrl }) => {
     fetchData();
   }, [fetchUrl]);
 
+  // Truncates text (i.e; adds ... to the hero description whem it exceeds the screen size)
+  function truncate(str, n) {
+    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+  }
+
   console.log("Randomized movie selected", movie);
   const heroImageUrl = base_url + movie?.backdrop_path;
 
@@ -54,7 +59,7 @@ const Hero = ({ fetchUrl }) => {
         </div>
 
         <h1 className="hero__description">
-          {movie.overview ? movie.overview : ""}
+          {truncate(movie.overview ? movie.overview : "", 200)}
         </h1>
       </div>
     </div>

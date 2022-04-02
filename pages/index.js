@@ -9,7 +9,7 @@ import requests from "./requests";
 
 export default function Home() {
   return (
-    <div className="home_page">
+    <div className="app">
       <Header />
       <Hero fetchUrl={requests.fetchTrending} />
       <h1 className="nice__">NETFLIX CLONE</h1>
