@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <div className="app">
       <Header />
-      <Hero fetchUrl={requests.fetchTrending} />
-      <h1 className="nice__">NETFLIX CLONE</h1>
 
+      <Hero fetchUrl={requests.fetchTrending} />
+      <br />
       <Row
         title="Netflix Originals"
         fetchUrl={requests.fetchNetflixOriginals}

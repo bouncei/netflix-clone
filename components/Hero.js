@@ -62,6 +62,7 @@ const Hero = ({ fetchUrl }) => {
           {truncate(movie.overview ? movie.overview : "", 200)}
         </h1>
       </div>
+      <div className="hero--fadeButtom"></div>
     </div>
   );
 };

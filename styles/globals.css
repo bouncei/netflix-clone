@@ -91,14 +91,15 @@ a {
 /* STYLING FOR HERO */
 .hero {
   color: white;
-  height: 500px;
+  height: 720px;
   object-fit: contain;
+
 }
 
 
 .hero__contents {
   margin-left: 30px;
-  padding-top: 140px;
+  padding-top: 195px;
   height: 190px;
 }
 
@@ -120,11 +121,6 @@ a {
 }
 
 
-/* .hero__buttons {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-} */
 
 .hero__button {
   cursor: pointer;
@@ -146,4 +142,47 @@ a {
   color: #000;
   background-color: #e6e6e6;
   transition: all 0.2s;
+}
+
+
+.hero--fadeButtom {
+  height: 9.2rem;
+  background: linear-gradient(0.5turn, transparent, rgba(37, 37, 37, 0.61), #111);
+  margin-top: 387px;
+}
+
+
+
+/*  */
+/*  */
+
+/* STYLING THE NAV BAR */
+.header {
+  display: flex;
+  background-color: black;
+  padding: 0.8rem 1.2rem;
+  color: #e6e6e6;
+  /* width: fit-content; */
+
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  margin-left: 25px;
+}
+
+
+.headerItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+.headerItem {
+  padding-right: 11px;
+
 }
