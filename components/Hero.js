@@ -58,9 +58,9 @@ const Hero = ({ fetchUrl }) => {
           <button className="hero__button">My List</button>
         </div>
 
-        <h1 className="hero__description">
+        <p className="hero__description">
           {truncate(movie.overview ? movie.overview : "", 200)}
-        </h1>
+        </p>
       </div>
       <div className="hero--fadeButtom"></div>
     </div>
