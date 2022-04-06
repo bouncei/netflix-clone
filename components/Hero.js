@@ -49,7 +49,7 @@ const Hero = ({ fetchUrl }) => {
         //   padding: "30px",
         // }}
       >
-        <h1 className="hero__title">
+        <h1 className="hero__title ">
           {movie.title ? movie.title : movie.name || movie.original_name}
         </h1>
 
@@ -58,7 +58,7 @@ const Hero = ({ fetchUrl }) => {
           <button className="hero__button">My List</button>
         </div>
 
-        <p className="hero__description">
+        <p className="hero__description   ">
           {truncate(movie.overview ? movie.overview : "", 200)}
         </p>
       </div>
