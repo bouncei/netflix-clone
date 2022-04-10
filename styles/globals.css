@@ -172,9 +172,11 @@ a {
   display: flex;
   background-color: black;
   padding: 0.8rem 1.2rem;
+  position: relative;
   color: #e6e6e6;
   align-items: center;
   font: var(--header-font);
+  width: 100%;
 }
 
 .logoContainer {
@@ -192,11 +194,14 @@ a {
   align-items: center;
   justify-content: space-between;
   margin-left: 30px;
+  /* position: fixed; */
+  /* left: 10%; */
 }
 
 .headerItem {
   padding-right: 11px;
   cursor: pointer;
+
 }
 
 
@@ -205,6 +210,8 @@ a {
   align-items: center;
   margin-left: auto;
   order: 2;
+  /* position: fixed; */
+  /* left: 90%; */
 
 }
 
