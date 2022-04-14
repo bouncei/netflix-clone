@@ -10,9 +10,9 @@ import requests from "./requests";
 export default function Home() {
   return (
     <div className="app">
-      <Header />
 
       <Hero fetchUrl={requests.fetchTrending} />
+      <Header />
       <br />
       <Row
         title="Netflix Originals"

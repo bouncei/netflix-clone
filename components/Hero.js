@@ -13,7 +13,7 @@ const Hero = ({ fetchUrl }) => {
 
       setMovie(
         request.data.results[
-          Math.floor(Math.random() * request.data.results.length - 1)
+        Math.floor(Math.random() * request.data.results.length - 1)
         ]
       );
 
@@ -44,10 +44,10 @@ const Hero = ({ fetchUrl }) => {
     >
       <div
         className="hero__contents"
-        // style={{
-        //   textAlign: "center",
-        //   padding: "30px",
-        // }}
+      // style={{
+      //   textAlign: "center",
+      //   padding: "30px",
+      // }}
       >
         <h1 className="hero__title ">
           {movie.title ? movie.title : movie.name || movie.original_name}

@@ -99,7 +99,8 @@ a {
 .hero {
   color: white;
   height: 720px;
-  object-fit: contain;
+  object-fit: fill;
+
   font: var(--hero-font);
   text-shadow: 2px 2px 4px rgb(0 0 0 / 45%)
 }
@@ -170,24 +171,45 @@ a {
 /* STYLING THE NAV BAR */
 .header {
   display: flex;
-  background-color: black;
-  padding: 0.8rem 1.2rem;
-  position: relative;
+  /* background-color: transparent !important; */
+
+  padding: 20px;
+  position: fixed;
+  height: 62px;
+  z-index: 1;
+  top: 0;
   color: #e6e6e6;
   align-items: center;
   font: var(--header-font);
   width: 100%;
+
+
+  /* Animation */
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.netflix-logo {
+  object-fit: contain;
 }
 
 .logoContainer {
+  position: fixed;
+  top: 15px;
   display: flex;
   align-items: center;
-  /* cursor: pointer; */
-  justify-content: space-between;
-
-  margin-left: 25px;
 }
 
+.EndItem {
+  position: fixed;
+  top: 15px;
+  right: 30px;
+  font-size: xx-large;
+}
+
+.header__black {
+  background-color: #111;
+}
 
 .headerItems {
   display: flex;
@@ -205,6 +227,8 @@ a {
 }
 
 
+
+
 .headerEnd {
   display: flex;
   align-items: center;
@@ -220,8 +244,8 @@ a {
   cursor: pointer;
 }
 
-.EndItem {
+/* .EndItem {
   padding-right: 20px;
   cursor: pointer;
   font-size: x-large;
-}
+} */
