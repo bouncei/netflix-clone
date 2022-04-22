@@ -11,19 +11,19 @@ const Header = () => {
   const [show, handleShow] = useState(false)
 
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        handleShow(true)
+  //   window.addEventListener("scroll", () => {
+  //     if (window.scrollY > 100) {
+  //       handleShow(true)
 
-      } else handleShow(false)
-    })
-    return () => {
-      // Removing the event listener
-      window.removeEventListener("scroll")
-    };
-  }, [])
+  //     } else handleShow(false)
+  //   })
+  //   return () => {
+  //     // Removing the event listener
+  //     window.removeEventListener("scroll")
+  //   };
+  // }, [])
 
   return (
     <div className={`header ${show && 'header__black'}`}>
