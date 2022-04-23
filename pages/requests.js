@@ -20,6 +20,6 @@ const requests = {
   // fetchDocumentaries: `/discover/movie?api_key=${process.env.API_KEY}&with_genres=99`,
 };
 
-console.log(requests.fetchActionMovies);
+// console.log(requests.fetchActionMovies);
 
 export default requests;

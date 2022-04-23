@@ -27,10 +27,10 @@ const Hero = ({ fetchUrl }) => {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   }
 
-  console.log("Randomized movie selected", movie);
+  // console.log("Randomized movie selected", movie);
   const heroImageUrl = base_url + movie?.backdrop_path;
 
-  console.log(heroImageUrl);
+  // console.log(heroImageUrl);
 
   return (
     <div
