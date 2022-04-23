@@ -11,19 +11,19 @@ const Header = () => {
   const [show, handleShow] = useState(false)
 
 
-  // useEffect(() => {
+  useEffect(() => {
 
-  //   window.addEventListener("scroll", () => {
-  //     if (window.scrollY > 100) {
-  //       handleShow(true)
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        handleShow(true)
 
-  //     } else handleShow(false)
-  //   })
-  //   return () => {
-  //     // Removing the event listener
-  //     window.removeEventListener("scroll")
-  //   };
-  // }, [])
+      } else handleShow(false)
+    })
+    return () => {
+      // Removing the event listener
+      window.removeEventListener("scroll")
+    };
+  }, [])
 
   return (
     <div className={`header ${show && 'header__black'}`}>
@@ -44,7 +44,10 @@ const Header = () => {
               className="netflix-logo"
             />
 
-            {/* Header Items */}
+            {/* 
+            
+            Header Items 
+          
             <div className="headerItems">
               <div className="headerItem">Home</div>
               <div className="headerItem">Tv Shows</div>
@@ -52,6 +55,11 @@ const Header = () => {
               <div className="headerItem">New & Popular</div>
               <div className="headerItem">My List</div>
             </div>
+          
+          
+          */}
+
+
           </div>
         </Link>
       </div>
