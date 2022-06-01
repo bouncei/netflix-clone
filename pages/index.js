@@ -10,7 +10,6 @@ import requests from "./requests";
 export default function Home() {
   return (
     <div className="app">
-
       <Hero fetchUrl={requests.fetchTrending} />
       <Header />
       <br />
@@ -24,8 +23,6 @@ export default function Home() {
       <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />
 
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
-
-      <Footer />
     </div>
   );
 }
