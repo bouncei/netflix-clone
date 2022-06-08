@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "../pages/axios";
 import Youbute from "react-youtube";
 import movieTrailer from "movie-trailer";
+import Image from "next/image";
 
 const style = {
   rowPoster: `object-contain `,
@@ -64,6 +65,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
             }`}
             alt={movie.name}
             className={`row__poster ${isLargeRow && "row__posterLarge"}`}
+            // layout="fill"
           />
         ))}
       </div>

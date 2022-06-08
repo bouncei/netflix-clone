@@ -8,28 +8,25 @@ import { BsBellFill } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
 
 const Header = () => {
-  const [show, handleShow] = useState(false)
-
+  const [show, handleShow] = useState(false);
 
   useEffect(() => {
-
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
-        handleShow(true)
-
-      } else handleShow(false)
-    })
+        handleShow(true);
+      } else handleShow(false);
+    });
     return () => {
       // Removing the event listener
-      window.removeEventListener("scroll")
+      window.removeEventListener("scroll");
     };
-  }, [])
+  }, []);
 
   return (
-    <div className={`header ${show && 'header__black'}`}>
+    <div className={`header ${show && "header__black"}`}>
       <div>
-        <Link href="/">
-          <div className="logoContainer">
+        <div className="logoContainer">
+          <Link href="/">
             <Image
               src={applogo}
               alt="logo"
@@ -38,30 +35,11 @@ const Header = () => {
               style={{
                 cursor: "pointer",
                 paddingTop: 7,
-
-
               }}
               className="netflix-logo"
             />
-
-            {/* 
-            
-            Header Items 
-          
-            <div className="headerItems">
-              <div className="headerItem">Home</div>
-              <div className="headerItem">Tv Shows</div>
-              <div className="headerItem">Movies</div>
-              <div className="headerItem">New & Popular</div>
-              <div className="headerItem">My List</div>
-            </div>
-          
-          
-          */}
-
-
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
 
       {/* SearchBar, ProfileIcon and Notifications Bar */}
